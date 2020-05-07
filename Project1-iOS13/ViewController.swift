@@ -24,7 +24,11 @@ class ViewController: UITableViewController {
             }
         }
         
+        pictures.sort()
+        
 //        print(pictures)
+        title = "Storm Viewer"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 
@@ -37,6 +41,7 @@ extension ViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = pictures[indexPath.row]
+        cell.accessoryType = .disclosureIndicator
         
         return cell
     }
@@ -47,6 +52,8 @@ extension ViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let dvc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController else { return }
         dvc.selectedImage = pictures[indexPath.row]
+        dvc.numberOfPicture = indexPath.row + 1
+        dvc.countOfPictures = pictures.count
 //        present(dvc, animated: true)
         navigationController?.pushViewController(dvc, animated: true)
         

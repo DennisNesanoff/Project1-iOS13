@@ -34,7 +34,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bvw-Le-XP9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097.1014492753625" y="270.53571428571428"/>
+            <point key="canvasLocation" x="975" y="271"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="bs4-4b-f5s">
@@ -45,13 +45,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OvH-GV-xKq">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="OvH-GV-xKq" firstAttribute="trailing" secondItem="p5o-n3-oU0" secondAttribute="trailing" id="AbN-8d-33o"/>
-                            <constraint firstItem="OvH-GV-xKq" firstAttribute="top" secondItem="p5o-n3-oU0" secondAttribute="top" id="K55-NC-iqs"/>
+                            <constraint firstItem="OvH-GV-xKq" firstAttribute="top" secondItem="Sq6-6C-jti" secondAttribute="top" id="K55-NC-iqs"/>
                             <constraint firstAttribute="bottom" secondItem="OvH-GV-xKq" secondAttribute="bottom" id="RMY-5I-owm"/>
                             <constraint firstItem="OvH-GV-xKq" firstAttribute="leading" secondItem="p5o-n3-oU0" secondAttribute="leading" id="jIj-TI-E4W"/>
                         </constraints>
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMO-lO-cGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910.144927536232" y="270.53571428571428"/>
+            <point key="canvasLocation" x="1769.5652173913045" y="270.53571428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q6q-QS-P7K">
